@@ -1,0 +1,5 @@
+python main.py ucf101 RGBDiff 'G:/paper/tsn-pytorch/tmk/absolute_train_rgb_split1.txt' 'G:/paper/tsn-pytorch/tmk/absolute_val_rgb_split1.txt' --arch BNInception --num_segments 7 --gd 40 --lr 0.001 --lr_steps 80 160 --epochs 180 -b 5 -j 5 --dropout 0.8 --snapshot_pref ucf101_bnatten
+
+python main.py ucf101 RGBDiff 'G:/paper/tsn-pytorch/tmk/absolute_train_rgb_split1.txt' 'G:/paper/tsn-pytorch/tmk/absolute_val_rgb_split1.txt' --arch BNInception --num_segments 7 --gd 40 --lr 0.001 --lr_steps 160 170 --epochs 180 -b 5 -j 5 --dropout 0.8 --snapshot_pref ucf101_bnatten_res3d
+
+python main.py ucf101 RGBDiff 'G:/paper/tsn-pytorch/tmk/absolute_train_rgb_split1.txt' 'G:/paper/tsn-pytorch/tmk/absolute_val_rgb_split1.txt' --arch BNInception --num_segments 7 --gd 40 --lr 0.001  -b 5 -j 5 --dropout 0.8 
